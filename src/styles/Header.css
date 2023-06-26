@@ -1,0 +1,14 @@
+.header{
+
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.616);
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    justify-content: space-between;
+
+
+}
+
+
