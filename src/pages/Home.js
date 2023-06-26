@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import AfterHero from '../components/AfterHero'
 
 export default function Home() {
 
@@ -12,7 +11,6 @@ export default function Home() {
 
     {/* <Header /> */}
     <Hero />
-    <AfterHero/>
     
     </>
   )

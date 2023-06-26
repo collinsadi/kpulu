@@ -8,18 +8,6 @@ export default function Hero() {
     const [backHalf, setBackHalf] = useState("")
     const [data, setData] = useState("")
 
-    //  const [timeOut, setTimeOut] = useState('')
-
-    // const setUp = axios.create({
-    //     baseURL: 'http://localhost:5000/',
-    //     timeout: 5000,
-    //     timeoutErrorMessage: setTimeOut("Request Timed Out"),
-    //     headers: {
-    //         "Content-Type":"Application/Json"
-    //     }
-    // })
-
-
 
     const url = 'http://localhost:5000/'
    
@@ -110,7 +98,8 @@ export default function Hero() {
             marginTop: "20px",
             fontWeight: "bold",
             cursor: "pointer",
-            textAlign:"center"
+            textAlign:"center",
+            color: "#ff4500"
         },
         domain:{
             width: "100%",
@@ -146,25 +135,25 @@ export default function Hero() {
 
     }
 
-    const handleShortenLink = async ()=>{
+    const handleShortenLink = async (e)=>{
 
-        if(longUrl.indexOf("https://") === -1 || longUrl.indexOf("http://") === -1 ){
+        if(!longUrl.includes('http://') && !longUrl.includes('https://') ){
 
         setData({
             status: "error",
-            message:"enter a valid Http or Https Url"
+            details:"Enter a Valid Http or Https Url"
         })
-
-        return ;
+            return ;
         }
 
-
+            e.target.innerHTML = "....."
+            e.target.disabled = true
 
             const response = await fetch(url+'shorten', {
                 method: "POST",
                 body: JSON.stringify({
                     long_Url: longUrl,
-                    unique_id: backHalf
+                    unique_id: backHalf.toLowerCase()
                 }),
                 headers:{
                     "Content-Type":"application/json"
@@ -174,6 +163,10 @@ export default function Hero() {
 
             const data = await response.json()
             setData(data)
+            e.target.innerHTML = "Shorten"
+            e.target.disabled = false
+            setLongUrl('')
+            setBackHalf('')
             console.log(longUrl)
             console.log(data)
 
