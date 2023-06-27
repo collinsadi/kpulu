@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kpulu/static/css/main.f25827ee.css",
-    "main.js": "/kpulu/static/js/main.71a9e774.js",
-    "index.html": "/kpulu/index.html",
-    "main.f25827ee.css.map": "/kpulu/static/css/main.f25827ee.css.map",
-    "main.71a9e774.js.map": "/kpulu/static/js/main.71a9e774.js.map"
+    "main.css": "/kpulu/home/static/css/main.f25827ee.css",
+    "main.js": "/kpulu/home/static/js/main.71a9e774.js",
+    "index.html": "/kpulu/home/index.html",
+    "main.f25827ee.css.map": "/kpulu/home/static/css/main.f25827ee.css.map",
+    "main.71a9e774.js.map": "/kpulu/home/static/js/main.71a9e774.js.map"
   },
   "entrypoints": [
     "static/css/main.f25827ee.css",
