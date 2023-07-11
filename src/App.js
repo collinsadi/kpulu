@@ -16,7 +16,7 @@ function App() {
 
 <Routes >
 
-<Route exact path='/home' element={
+<Route exact path='/' element={
   <>
 <Header/>
 <Home />
@@ -24,7 +24,7 @@ function App() {
 
 } />
 
-<Route path='/s/:id' element={<ShortUrl />} />
+<Route path='/:id' element={<ShortUrl />} />
 
 <Route path='*' element={<NotFound />} />
 </Routes>

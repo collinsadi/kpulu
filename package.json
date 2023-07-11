@@ -5,7 +5,7 @@
   "engines": {
     "node": "18.x"
   },
-  "homepage": "https://collinsadi.github.io/kpulu/",
+  "homepage": "https://collinsadi.github.io/kpulu/home",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

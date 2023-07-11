@@ -37,7 +37,7 @@ export default function Header() {
         <div className='header'>
 
         <div className='nav-logo' style={styles.navLogo}>
-            <img src='/images/logo.png' alt='site logo' style={styles.navLogoImage} />
+            <img src='../../images/logo.png' alt='site logo' style={styles.navLogoImage} />
         </div>
         
         {/* <div className='call-to-action'>
